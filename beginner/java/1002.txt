@@ -8,6 +8,11 @@ public class Main {
 
             scanner.useLocale(Locale.US);
 
+            double raio = scanner.nextDouble();
+            double pi = 3.14159;
+            double area = pi * Math.pow(raio, 2);
+            
+            System.out.printf("A=%.4f%n", area);
 
         scanner.close();
     }
