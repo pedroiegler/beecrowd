@@ -1,15 +1,15 @@
 #include <stdio.h>
-#include <math.h>
 
 int main(){
 
-    double raio;
+    int a, b;
 
-    scanf("%lf", &raio);
+    scanf("%d", &a);
+    scanf("%d", &b);
 
-    double area = 3.14159 * pow(raio,2);
+    int soma = a + b;
 
-    printf("A=%.4lf\n", area);
+    printf("SOMA = %d\n", soma);
 
     return 0;
 }
