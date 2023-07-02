@@ -8,14 +8,6 @@ public class Main {
 
             scanner.useLocale(Locale.US);
 
-            int numFunc = scanner.nextInt();
-            int horasTrab = scanner.nextInt();
-            double valorGanho = scanner.nextDouble();
-
-            double ganhoTotal = horasTrab * valorGanho;
-
-            System.out.printf("NUMBER = %d%nSALARY = U$ %.2f%n", numFunc, ganhoTotal);
-
         scanner.close();
     }
 }
