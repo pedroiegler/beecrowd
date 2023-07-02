@@ -2,14 +2,14 @@
 
 int main(){
 
-    int x, y;
+    double nota1, nota2;
 
-    scanf("%d", &x);
-    scanf("%d", &y);
+    scanf("%lf", &nota1);
+    scanf("%lf", &nota2);
 
-    int mult = x * y;
+    double media = ((nota1 * 3.5) + (nota2 * 7.5)) / 11;
 
-    printf("PROD = %d\n", mult);
+    printf("MEDIA = %.5lf\n", media);
 
     return 0;
 }
