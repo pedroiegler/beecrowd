@@ -15,7 +15,7 @@ public class Main {
             if(n % 2 == 0){
                 System.out.println(n);
             }
-}
+        }
 
         scanner.close();
     }
