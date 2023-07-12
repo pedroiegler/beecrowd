@@ -9,14 +9,6 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        int n;
-
-        for(n = 1; n <= 100; n++){
-            if(n % 2 == 0){
-                System.out.println(n);
-            }
-}
-
         scanner.close();
     }
 }
