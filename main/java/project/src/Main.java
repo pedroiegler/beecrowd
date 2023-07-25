@@ -9,20 +9,26 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        int n = 1, a, soma = 0, i;
+        int x, z, soma = 0, cont = 0;
 
-        a = scanner.nextInt();
-        n = scanner.nextInt();
+        x = scanner.nextInt();
+        z = scanner.nextInt();
 
-        while (n <= 0)
-            n = scanner.nextInt();
-
-        for(i = 1; i <= n; i++){
-            soma += a;
-            a++;
+        while (z <= x){
+            z = scanner.nextInt();
         }
 
-        System.out.printf("%d%n", soma);
+        for(;;){
+            if(soma > z){
+                break;
+            }else{
+                cont++;
+                soma += x;
+                x++;
+            }
+        }
+
+        System.out.printf("%d%n", cont);
     }
 }
 
