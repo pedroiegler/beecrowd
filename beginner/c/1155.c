@@ -4,7 +4,7 @@ int main(){
     int i; 
     double s = 0.0, n = 100.0;
 
-    for(i = 1; i <= n; i++){
+    for(i = 1; i <= 100; i++){
         s = s + (1.0/i);
     }
 
