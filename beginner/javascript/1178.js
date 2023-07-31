@@ -7,11 +7,11 @@ var n;
 
 n = parseFloat(linhas.shift());
 
-for(i = 0; i < 100; i++){
+for (i = 0; i < 100; i++) {
     v[i] = n;
     n /= 2.0;
 }
 
-for(i = 0; i < 100; i++){
-    console.log(`N[${i}] = ${v[i].toFixed(4)}`);
+for (i = 0; i < 100; i++) {
+    console.log(`N[${i}] = ${v[i].toLocaleString('en-US', { minimumFractionDigits: 4 })}`);
 }
