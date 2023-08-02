@@ -16,4 +16,5 @@ def operation_in_line(mat, l, op):
     else:
         return sum / 12
 
+
 print("{:.1f}".format(operation_in_line(matrice, line, operation)))
