@@ -20,7 +20,7 @@ function soma_or_media(mat, op){
 var coluna = 7, aux = 5, i, j, cont = 0;
 var soma = 0.0;
 
-for(i = 0; i < 5; i++){
+for(i = 7; i < 12; i++){
     for(j = aux; j < coluna; j++){
         soma += mat[i][j];
         cont++;
