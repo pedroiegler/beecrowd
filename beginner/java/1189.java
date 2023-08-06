@@ -41,7 +41,7 @@ public class Main {
                   cont++;
               r--;
             }
-          }
+        }
     
         
         if(op == 'S'){
