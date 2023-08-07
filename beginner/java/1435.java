@@ -5,9 +5,9 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        int i, j, n, value, iniMatriz, fimMatriz;
+        int i, j, n = 1, value, iniMatriz, fimMatriz;
 
-        while(true){
+        while(n != 0){
             n = scanner.nextInt();
 
             if(n == 0)
@@ -19,13 +19,10 @@ public class Main {
 
             int[][] m = new int[n][n];
 
-            while(true){
+            while(fimMatriz != 0){
                 for(i = iniMatriz; i < fimMatriz; i++)
                     for(j = iniMatriz; j < fimMatriz; j++)
                         m[i][j] = value;
-                    
-                if(fimMatriz == 0)
-                    break;
                 
                 fimMatriz--;
                 iniMatriz++;
