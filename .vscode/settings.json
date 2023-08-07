@@ -61,8 +61,5 @@
   "C_Cpp.errorSquiggles": "disabled",
   "files.associations": {
     "stdio.h": "c"
-  },
-  "files.exclude": {
-    "main": true
   }
 }
