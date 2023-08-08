@@ -14,16 +14,17 @@ while(n != 0){
 
     var m = new Array();
 
-    for(i = 0; i < n; i++)
+    for(i = 0; i < n; i++) {
         m.push(new Array());
-        for(j = 0; j < n; j++){
+        for(j = 0; j < n; j++) {
             if (i == j)
                 m[i][j] = 1;
-            if (i < j)
+            else if (i < j)
                 m[i][j] = j - i + 1;
-            if (i > j)
+            else
                 m[i][j] = i - j + 1;
         }
+    }
 
     for (let i = 0; i < n; i++) {
         let rowStr = '';
@@ -38,4 +39,3 @@ while(n != 0){
 
     console.log();
 }
-
