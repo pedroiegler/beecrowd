@@ -1,37 +1,29 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+     public static void main(String[] args) throws IOException {
 
         Scanner scanner = new Scanner(System.in);
 
-        int tamanho = 1, linha, coluna;
+    	int n;
 
-        while (tamanho != 0){
+        while (scanner.hasNext()) {
+    		n = scanner.nextInt();
+            
+    		for (int i = 0; i < n; i++) {
+    			for (int j = 0; j < n; j++) {
+    				if (j == n - i - 1) 
+                        System.out.print(2);
 
-            tamanho = scanner.nextInt();
-            int[][] matriz = new int[tamanho][tamanho];
+    				else if (i == j) 
+                        System.out.print(1);
 
-            for(linha = 0; linha < tamanho; linha++)
-                for(coluna = 0; coluna < tamanho; coluna++){
-                    if (linha == coluna)
-                        matriz[linha][coluna] = 1;
-                    if (linha < coluna)
-                        matriz[linha][coluna] = coluna - linha + 1;
-                    if (linha > coluna)
-                        matriz[linha][coluna] = linha - coluna + 1;
-                }
-
-            for (linha = 0; linha < tamanho; linha++){
-                for (coluna = 0; coluna < tamanho; coluna++){
-                    if (coluna == 0)
-                        System.out.printf("%3hd", matriz[linha][coluna]);
-                    else
-                        System.out.printf(" %3hd", matriz[linha][coluna]);
-                }
-                System.out.printf("%n");
-            }
-            System.out.printf("%n");
-        }
+    				else 
+                        System.out.print(3);
+    			}
+    			System.out.print("\n");
+    		}
+    	}
     }
 }
