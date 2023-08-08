@@ -5,44 +5,33 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        int i, j, n, value, iniMatriz, fimMatriz;
+        int tamanho = 1, linha, coluna;
 
-        while(true){
-            n = scanner.nextInt();
+        while (tamanho != 0){
 
-            if(n == 0)
-                break;
-            
-            iniMatriz = 0;
-            fimMatriz = n;
-            value = 1;
+            tamanho = scanner.nextInt();
+            int[][] matriz = new int[tamanho][tamanho];
 
-            int[][] m = new int[n][n];
-
-            while(true){
-                for(i = iniMatriz; i < fimMatriz; i++)
-                    for(j = iniMatriz; j < fimMatriz; j++)
-                        m[i][j] = value;
-                    
-                if(fimMatriz == 0)
-                    break;
-                
-                fimMatriz--;
-                iniMatriz++;
-                value++;
-            }
-
-            for (i = 0; i < n; i++){
-                    for (j = 0; j < n; j++){
-                        if (j == 0)
-                            System.out.printf("%3d", m[i][j]);
-                        else
-                            System.out.printf(" %3d", m[i][j]);
-                    }
-                    System.out.printf("%n");
+            for(linha = 0; linha < tamanho; linha++)
+                for(coluna = 0; coluna < tamanho; coluna++){
+                    if (linha == coluna)
+                        matriz[linha][coluna] = 1;
+                    if (linha < coluna)
+                        matriz[linha][coluna] = coluna - linha + 1;
+                    if (linha > coluna)
+                        matriz[linha][coluna] = linha - coluna + 1;
                 }
 
+            for (linha = 0; linha < tamanho; linha++){
+                for (coluna = 0; coluna < tamanho; coluna++){
+                    if (coluna == 0)
+                        System.out.printf("%3hd", matriz[linha][coluna]);
+                    else
+                        System.out.printf(" %3hd", matriz[linha][coluna]);
+                }
                 System.out.printf("%n");
+            }
+            System.out.printf("%n");
         }
     }
 }
