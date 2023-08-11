@@ -25,10 +25,10 @@ rl.on('line', (line) => {
       if (speeds[i] > m) {
         m = speeds[i];
       }
+      const N = levels(m);
+      console.log(N);
     }
 
-    const N = levels(m);
-    console.log(N);
 
   });
 });
