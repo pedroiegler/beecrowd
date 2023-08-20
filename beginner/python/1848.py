@@ -1,25 +1,30 @@
-sum = 0
+def piscada_bin(piscada):
+    piscada = piscada.replace('-','0')
+    piscada = piscada.replace('*','1')
+    return piscada
 
-while True:
-    crow = input()
+
+def bin_int(piscada):
+    piscada = int(piscada,2)
+    return piscada
+
+
+def soma(piscada,s):
+    s += piscada
+    return s
+
+def main():
+    for i in range(3):
+        s = 0
+        while True:
+            piscada = input()
+            if piscada != 'caw caw':
+                piscada = piscada_bin(piscada)
+                piscada = bin_int(piscada)
+                s = soma(piscada,s)
+            else:
+                print(s)
+                break
+
+main()
     
-    if crow == "caw caw":
-        print(sum)
-        sum = 0
-    else:
-        if crow == "--*":
-            sum += 1
-        if crow == "-*-":
-            sum += 2
-        if crow == "*--":
-            sum += 4
-        if crow == "---":
-            sum += 0
-        if crow == "***":
-            sum += 7
-        if crow == "**-":
-            sum += 6
-        if crow == "-**":
-            sum += 3
-        if crow == "*-*":
-            sum += 5
