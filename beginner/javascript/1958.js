@@ -5,8 +5,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question('Digite um número: ', (numero) => {
-  numero = parseFloat(numero);
+rl.on('line', (line) => {
+  const numero = parseFloat(line);
   console.log(`${numero.toExponential(4)}`);
-  rl.close();
 });
