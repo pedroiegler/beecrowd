@@ -7,5 +7,6 @@ m = parseInt(linhas.shift());
 for(var i = 0; i < m; i++) 
     ch = linhas.shift();
 
+    
 console.log("Ciencia da Computacao");
 
