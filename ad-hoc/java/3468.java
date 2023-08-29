@@ -14,6 +14,3 @@ public class Main {
         }
     }
 }
-public class 3468 {
-    
-}
