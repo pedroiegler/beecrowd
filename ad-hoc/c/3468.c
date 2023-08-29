@@ -6,7 +6,6 @@ int main() {
     char idea[20];
     scanf("%s", idea);
 
-    // Converter a entrada para letras minúsculas para facilitar a comparação
     for (int i = 0; idea[i]; i++) {
         idea[i] = tolower(idea[i]);
     }
