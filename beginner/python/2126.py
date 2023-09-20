@@ -8,7 +8,7 @@ while True:
         if qt == 0:
             print('Nao existe subsequencia')
         else:
-            print('Qtd.Subsequencias: %d' % qt)
+            print2('Qtd.Subsequencias: %d' % qt)
             qt = n2.rfind(n1)
             print('Pos: %d' % (int(qt)+1))
         print()
