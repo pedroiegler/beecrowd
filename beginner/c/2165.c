@@ -16,5 +16,6 @@ int main (){
 		printf("MUTE\n");
 	else
 		printf("TWEET\n");
+		
 
 }
