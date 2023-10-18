@@ -15,7 +15,7 @@ for (let i = 0; i < N; i++) {
     const camerasAtivadas = cameras[i][j] + cameras[i][j + 1] + cameras[i + 1][j] + cameras[i + 1][j + 1];
     quadras[i] = quadras[i] || [];
     if (camerasAtivadas >= 2) {
-      quadras[i][j] = 'S';
+      quadras[i][j] = 'S'; 
     } else {
       quadras[i][j] = 'U';
     }
