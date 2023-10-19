@@ -9,7 +9,7 @@ const quadras = new Array(N);
 for (let i = 0; i <= N; i++) {
   cameras[i] = lines.shift().split(' ').map(Number);
 }
-
+ 
 for (let i = 0; i < N; i++) {
   for (let j = 0; j < N; j++) {
     const camerasAtivadas = cameras[i][j] + cameras[i][j + 1] + cameras[i + 1][j] + cameras[i + 1][j + 1];
