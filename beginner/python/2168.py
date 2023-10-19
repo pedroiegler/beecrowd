@@ -16,3 +16,4 @@ for i in range(N):
 
 for linha_quadras in quadras:
     print("".join(linha_quadras))
+ 
