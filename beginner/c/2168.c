@@ -28,7 +28,7 @@ int main() {
         for (int j = 0; j < N; j++) {
             printf("%c", quadras[i][j]);
         }
-        printf("\n");
+        printf("\n"); 
     }
 
     return 0;
