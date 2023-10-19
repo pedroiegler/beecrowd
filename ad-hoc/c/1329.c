@@ -4,8 +4,12 @@ int main() {
     
     int n = 1, i, jogada, contM, contJ;
 
-    while (n != 0){
+    while (1){
         scanf("%d", &n);
+
+        if(n == 0)
+            break;
+            
         contM = 0;
         contJ = 0;
 
