@@ -20,7 +20,7 @@ public class Main {
                 if (camerasAtivadas >= 2) {
                     quadras[i][j] = 'S';
                 } else {
-                    quadras[i][j] = 'U';
+                    quadras[i][j] = 'U'; 
                 }
             }
         }
