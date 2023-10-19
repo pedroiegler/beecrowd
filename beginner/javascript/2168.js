@@ -18,7 +18,7 @@ for (let i = 0; i < N; i++) {
       quadras[i][j] = 'S'; 
     } else {
       quadras[i][j] = 'U';
-    }
+    } 
   }
 }
 
