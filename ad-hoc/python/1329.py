@@ -20,7 +20,7 @@ while True:
             contM+=1
         else:
             contJ+=1
-
+ 
 
     print("Mary won %d times and John won %d times" % (contM, contJ))
  
