@@ -23,3 +23,4 @@ while True:
 
 
     print("Mary won %d times and John won %d times" % (contM, contJ))
+ 
