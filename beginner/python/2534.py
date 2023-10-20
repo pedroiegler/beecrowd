@@ -1,27 +1,21 @@
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n - 1):
+        for j in range(n - 1 - i):
+            if arr[j] < arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
 while True:
     try:
-        N = int(input())
+        n, q = list(map(int, input().split()))
+        numbers = list(map(int, input().split()))
 
-        resultado =  []
+        bubble_sort(numbers)
 
-        col2 = N - 1
-        for i in range(N):
-            tmp = []
-            for j in range(N):
-                if(j==col2):
-                    tmp.append(2)
-                    col2 -= 1
-                else:
-                    if(i == j):
-                        tmp.append(1)
-                    else:
-                        tmp.append(3)
-            resultado.append(tmp)
+        for i in range(q):
+            position = int(input())
+            if 1 <= position <= n: 
+                print(numbers[position - 1])
 
-        for i in range(N):
-            tx = ''
-            for j in range(N):
-                tx += str(resultado[i][j])
-            print(tx)
     except EOFError:
         break
