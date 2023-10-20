@@ -12,7 +12,7 @@ while True:
 
     valores = input().split()
     
- 
+  
     for valor in valores[:n]:
         jogada = int(valor)
 
