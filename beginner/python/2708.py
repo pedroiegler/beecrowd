@@ -1,22 +1,10 @@
-cont1 = 0
-cont2 = 0
+atendidos = list(map(int, input().split()))
+requisitados = list(map(int, input().split()))
 
-while True:
+nao_atendidos = 0
 
-    valores = input().split()
-    action = valores[0]
-
-    if(valores[0] == "ABEND"):
-        break
-    else:
-        n = int(valores[1])
-
-        if(valores[0] == "SALIDA"):
-            cont1+=n
-            cont2+=1
-        else:
-            cont1-=n
-            cont2-=1
-
-
-print("%d\n%d" % (cont1, cont2))
+for i in range(3):
+    if(requisitados[i] > atendidos[i]):
+        nao_atendidos += requisitados[i] - atendidos[i]
+        
+print(nao_atendidos)
