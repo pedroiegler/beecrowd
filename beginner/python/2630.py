@@ -1,7 +1,7 @@
 n = int(input())
 
 for i in range(1,n+1):
-    val = input()
+    val = input() 
     
     a, b, c = list(map(int,input().split()))
 
