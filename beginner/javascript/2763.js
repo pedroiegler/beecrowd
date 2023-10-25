@@ -4,6 +4,6 @@ const lines = input.trim().split('\n');
 
 const tokens = lines.shift().split(/[.-]/);
 
-  tokens.forEach((token) => {
+  tokens.forEach((token) => { 
     console.log(token);
   }); 
