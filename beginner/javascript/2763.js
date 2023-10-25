@@ -6,4 +6,4 @@ const tokens = lines.shift().split(/[.-]/);
 
   tokens.forEach((token) => {
     console.log(token);
-  });
+  }); 
