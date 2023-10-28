@@ -9,4 +9,5 @@ for figurinha in compradas:
 
 faltam = album.count(0) 
 
-print("%d" % faltam)
+print("%d" % faltam) 
+ 
